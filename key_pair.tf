@@ -1,4 +1,4 @@
 resource "aws_key_pair" "terraform" {
   key_name   = "terrafrom"
-  public_key = "file('~/.ssh/id_rsa.pub')"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
