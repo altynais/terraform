@@ -16,4 +16,9 @@ resource "aws_security_group" "sec1" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
 
+  tags = {
+    Name = "Wed Server"
+    Environment = "Prod"
+  }
+
 }
