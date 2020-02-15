@@ -1,5 +1,7 @@
 terraform {
-    backend = "terraform-altynais"
-    region = "us-east-1"
-    key = "dev.tfstate"
+    backend "s3" {
+        backend = "terraform-altynais"
+        region = "us-east-1"
+        key = "dev.tfstate"
+    }  
 }
