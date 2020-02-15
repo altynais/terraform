@@ -1,3 +1,3 @@
-output "key_namw" {
-  value = "${aws_key_pair.terraform}"
+output "key_name" {
+  value = "${aws_key_pair.terraform.key_name}"
 }
