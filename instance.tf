@@ -4,8 +4,7 @@ resource "aws_instance" "web1" {
     key_name = "${aws_key_pair.terraform.key_name}"
     security_groups = ["${aws_security_group.sec1.name}"] 
     user_data = "${file("userdata.sh")}"
-
-
+    
     tags = {
         Name = "Wed Server"
         Environment = "Prod"
